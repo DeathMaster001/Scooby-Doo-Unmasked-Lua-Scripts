@@ -6,3 +6,4 @@ local function getFoodTotals()
 end
 
 food.getFoodTotals = getFoodTotals
+return food
