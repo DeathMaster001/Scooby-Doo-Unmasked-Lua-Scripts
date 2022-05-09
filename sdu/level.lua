@@ -28,7 +28,7 @@ local LevelLookups = {
 }
 
 local function getlevelname()
-	levelid = "" .. tostring(getLevel())
+	levelid = "l" .. tostring(getLevel())
 	shared.consoleout = shared.consoleout .. "level:" .. LevelLookups[levelid] .. "\n"
 end
 
