@@ -1,6 +1,11 @@
---modules
+-- global modules
 package.path = GetScriptsDir() .. "sdu/memory.lua"
 require("memory.lua")
+
+package.path = GetScriptsDir() .. "sdu/helperFuncs.lua"
+require("helperFuncs.lua")
+
+-- local modules
 
 package.path = GetScriptsDir() .. "sdu/level.lua"
 local level = require("level.lua")
