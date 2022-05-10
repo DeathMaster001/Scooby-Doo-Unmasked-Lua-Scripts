@@ -1,21 +1,3 @@
---local variables
-
-local memory = {}
-
-local FoodLookups = {
-	f1 = "Cabbage: ",
-	f2 = "Chocolate Bar: ",
-	f3 = "Hot Pepper: ",
-	f3 = "Ice Cream: ",
-}
-memory.FoodLookups = FoodLookups
-
-local CollectedState = {
-	f1 = "Collected",
-    f0 = "Not Collected",
-}
-memory.FoodLookups = FoodLookups
-	
 --Scooby's Health's
 
 function getScoobyHealth()
