@@ -5,8 +5,8 @@ require("memory.lua")
 package.path = GetScriptsDir() .. "sdu/level.lua"
 local level = require("level.lua")
 
-package.path = GetScriptsDir() .. "sdu/food.lua"
-local food = require("food.lua")
+package.path = GetScriptsDir() .. "sdu/collectibles.lua"
+local collectibles = require("collectibles.lua")
 
 --global variables
 
@@ -36,7 +36,7 @@ function onScriptUpdate()
     if lastexecutedframe ~= shared.frame then
         shared.consoleout = ""
         level.getlevelname()
-        food.getFoodTotals()
+        collectibles.getFoodTotals()
         SetScreenText(shared.consoleout)
 
     end
