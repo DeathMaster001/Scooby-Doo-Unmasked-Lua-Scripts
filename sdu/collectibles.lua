@@ -75,7 +75,7 @@ local function getLevelFoods()
             -- then add text to console out with item name and collection status
 
             if FoodBitMap[levelid][i] ~= "?" then
-                shared.consoleout = shared.consoleout .. "[Food]" .. FoodBitMap[levelid][i] .. ": " .. tostring(foodFlags[i]) .. "n"        
+                shared.consoleout = shared.consoleout .. "[Food] " .. FoodBitMap[levelid][i] .. ": " .. tostring(foodFlags[i]) .. "\n"        
             end
         end
 

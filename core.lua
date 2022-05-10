@@ -41,7 +41,7 @@ function onScriptUpdate()
     if lastexecutedframe ~= shared.frame then
         shared.consoleout = ""
         level.getlevelname()
-        collectibles.getFoodTotals()
+        collectibles.getLevelFoods()
         SetScreenText(shared.consoleout)
 
     end
