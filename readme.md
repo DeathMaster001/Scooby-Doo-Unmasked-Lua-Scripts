@@ -7,10 +7,8 @@ On screen level name and Position Viewer.
 
 # How to Use
 
-(WIP)
+In order to use this tool you are required to use a custom version of dolphin specificly built for TAS creation called [Dolphin Lua Core](https://github.com/SwareJonge/Dolphin-Lua-Core).
 
-In order to use this tool you are required to use a custom version of dolphin specificly built for TAS creation called Dolphin Lua Core, you can find this below ;
+Once you have downloaded this build, you will need to place the contents of the latest release into the '/sys/scripts/' folder found inside your dolphin lua core install folder.
 
-Once you have downloaded this build, you will need to place the contents of the latest release into the '/sys/scripts/' folder found inside your dolphin lua core install folder, download link below;
-
-Once this script has been installed,
+Once the scripts are in the proper path, open the Dolphin Lua Core Emulator and follow the [Running Scripts](https://github.com/SwareJonge/Dolphin-Lua-Core#running-scripts) section of the Dolphin Lua Core Github Repository to execute the scripts.
