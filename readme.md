@@ -2,8 +2,8 @@
 Lua tools for learning Scooby-Doo! Unmasked 100%. Intended to be used by speedrunners, glitch hunters and TAS creators.
 
 # Intended Features
-Food, Clue and Costume Token tracker.
-On screen level name and Position Viewer.
+- Food, Clue and Costume Token tracker.
+- On screen level name and Position Viewer.
 
 # How to Use
 
