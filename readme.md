@@ -1,5 +1,5 @@
 # Scooby-Doo! Unmasked Lua Tool
-A repository of Lua scripts made specifically for the GameCube game Scooby-Doo! Unmasked (G5DE78). Intended to be used by speedrunners, glitch hunters and TAS creators.
+A repository of Lua scripts made specifically for the GameCube game Scooby-Doo! Unmasked (G5DE78). Intended to be used by speedrunners, glitch hunters and TAS creators. Scripts written for use with SwareJonge's Dolphin Lua Core emulator which can be found [here](https://github.com/SwareJonge/Dolphin-Lua-Core).
 
 ## Planned Features (All Toggleable)
 - Stats (Health, Total Health, Mubber, Level Name's)
