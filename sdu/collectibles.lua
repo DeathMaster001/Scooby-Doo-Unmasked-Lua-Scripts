@@ -16,11 +16,11 @@ local LevelFoodMap = {
 	l10 = 0x8055998A, --"Sewers Autoscroll/End",
 	l11 = 0x8055998B, --"Temple",
 	l12 = nil, --"Warehouse/\nDragon",
-	l13 = nil, --"Theme Park Hub",
-	l14 = nil, --"Haunted House",
-	l15 = nil, --"Water Park",
-	l16 = nil, --"Water Slide/End",
-	l17 = nil, --"Circus",
+	l13 = 0x8055998D, --"Theme Park Hub",
+	l14 = 0x8055998E, --"Haunted House",
+	l15 = 0x8055998F, --"Water Park",
+	l16 = 0x80559990, --"Water Slide/End",
+	l17 = 0x80559991, --"Circus Tent",
 	l18 = nil, --"House of Mirrors/\nGuitar Ghoul",
 	l19 = 0x80559993, --"Museum Hub",
 	l20 = 0x80559994, --"Dino",
@@ -40,7 +40,12 @@ local FoodBitMap = {
     l8  = {"?","?","?","?","Cotton Candy","Apple","Eggplant","Ham"}, --"Cookie Factory",
     l9  = {"?","?","?","?","Cheese","Marshmallow","Fish","Pepperoni"}, --"Sewers",
     l10 = {"?","?","?","?","?","?","Pickle","Cabbage"}, --"Sewers Autoscroll/End",
-    l11 = {"?","?","?","?","Chocolate","Cheese","Onion","Carrot"}, --"Temple",
+    l11 = {"?","?","?","?","Chocolate Bar","Cheese","Onion","Carrot"}, --"Temple",
+	l13 = {"?","?","Broccoli","Pickle","Lobster","Sausage","Onion","Carrot"}, --"Theme Park Hub",
+	l14 = {"?","?","?","?","Broccoli","Chocolate Bar","Popcorn","Shrimp"}, --"Haunted House",
+	l15 = {"?","?","?","?","Cheese","Cabbage","Fish","Cotton Candy"}, --"Water Park",
+	l16 = {"?","?","?","?","?","?","Ham","Marshmallows"}, --"Water Slide/End",
+	l17 = {"?","?","?","?","Banana","Apple","Pepperoni","Eggplant"}, --"Circus Tent",
     l19 = {"?","Lobster","Ice Cream","Pickle","Pepperoni","Onion","Ham","Cheese"}, --"Museum Hub",
 	l20 = {"?","?","?","?","Sausage","Marshmallow","Apple","Chips"}, --"Dino",
 	l21 = {"?","?","?","?","Burger","Popcorn","Fish","Carrot"}, --"Medieval",
@@ -66,7 +71,9 @@ local function getLevelFoods()
 
         foodFlags = toBits(ReadValue8(LevelFoodMap[levelid]),8)
 
-        -- for 1 to 8 (each bit of byte) 
+		shared.consoleout = shared.consoleout .. "\nFood:\n"
+
+		-- for 1 to 8 (each bit of byte) 
 
         for i = 1,8,1 
         do
@@ -75,7 +82,11 @@ local function getLevelFoods()
             -- then add text to console out with item name and collection status
 
             if FoodBitMap[levelid][i] ~= "?" then
-                shared.consoleout = shared.consoleout .. "[Food] " .. FoodBitMap[levelid][i] .. ": " .. tostring(foodFlags[i]) .. "\n"        
+				if foodFlags[i] == 0 then
+					shared.consoleout = shared.consoleout .. FoodBitMap[levelid][i] .. " [ ]\n"
+				else
+					shared.consoleout = shared.consoleout .. FoodBitMap[levelid][i] .. " [*]\n"
+				end
             end
         end
 
