@@ -4,7 +4,7 @@ local LevelLookups = {
 	l2 = "Monster Profiles",
 	l3 = "Bonus Art",
 	l4 = "Main Menu",
-    l6 = "MFM 1",
+	l6 = "MFM 1",
 	l7 = "Chinatown Hub",
 	l8 = "Cookie Factory",
 	l9 = "Sewers",
@@ -28,13 +28,15 @@ local LevelLookups = {
 }
 
 local function getlevelname()
-	levelid = "l" .. tostring(getLevel())
-	shared.consoleout = shared.consoleout .. "level:" .. LevelLookups[levelid] .. "\n"
+	return "l" .. tostring(getLevel())
+end
+
+local function writelevelname()
+	levelid = getlevelname()
+	shared.consoleout = shared.consoleout .. "Level:" .. LevelLookups[levelid] .. "\n"
 end
 
 --exports
 level.getlevelname = getlevelname
+level.writelevelname = writelevelname
 return level
-
-
-
