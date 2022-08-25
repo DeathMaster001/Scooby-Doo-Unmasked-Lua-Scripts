@@ -24,7 +24,7 @@ Once the script has been started, you can then press Z+L to enable the tool, whi
 
 ## Changing controls
 
-Controls can be changed to any button of your choice by modifying the Mappings in _SDNoOF_core.lua.
+Controls can be changed to any button of your choice by modifying the Mappings in inputTest.lua.
 
 All buttons must be written in uppercase (i.e 'B', 'DOWN' or 'LT'), and must have a '+' between each one.
 The buttons "LT" and "RT" are the respective "L" and "R" buttons. The triggers do not work.
