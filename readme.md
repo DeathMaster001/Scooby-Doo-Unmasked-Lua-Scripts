@@ -1,5 +1,5 @@
-# Scooby-Doo! Unmasked Lua Tool
-A repository of Lua scripts made specifically for the GameCube game Scooby-Doo! Unmasked (G5DE78). Intended to be used by speedrunners, glitch hunters and TAS creators. Scripts written for use with SwareJonge's Dolphin Lua Core emulator which can be found [here](https://github.com/SwareJonge/Dolphin-Lua-Core).
+# Scooby-Doo! Unmasked Lua Scripts
+A repository of Lua scripts made specifically for the GameCube game Scooby-Doo! Unmasked (G5DE78). Scripts made for use with the [Dolphin Lua Core](https://github.com/SwareJonge/Dolphin-Lua-Core) emulator. Intended to be used by speedrunners, glitch hunters and TAS creators.
 
 ## Planned Features (All Toggleable)
 - Stats (Health, Total Health, Mubber, Level Name's)
@@ -7,7 +7,7 @@ A repository of Lua scripts made specifically for the GameCube game Scooby-Doo! 
 - Input Viewer and Position Viewer
 
 ## How to Use
-In order to use this tool you are required to use a custom version of Dolphin specificly built for TAS creation called [Dolphin Lua Core](https://github.com/SwareJonge/Dolphin-Lua-Core).
+In order to use these scripts you are required to use a custom version of Dolphin specificly built for TAS creation called [Dolphin Lua Core](https://github.com/SwareJonge/Dolphin-Lua-Core).
 
 Once you have downloaded this build, you will need to place the contents of the latest release into the '/sys/scripts/' folder found inside your dolphin lua core install folder.
 
@@ -38,6 +38,6 @@ Example bind shown below;
 If your interested I've made a similar tool that works separately with Dolphin, check it out [here](https://github.com/DeathMaster001/Scooby-Doo-Unmasked-Windowed-Tool).
 
 ## Credits
-
-Credit goes to [HDBSD](https://github.com/HDBSD) for helping me understand the Lua Scripting Language.\
-Credit goes to [SwareJonge](https://github.com/SwareJonge) for creating the [Dolphin Lua Core](https://github.com/SwareJonge/Dolphin-Lua-Core) emulator. This project wouldn't exist without it.
+- DeathMaster001 for coding.
+- HDBSD for helping me understand the Lua scripting language.
+- ClimbingCoder for finding the majority of the memory values.
