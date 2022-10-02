@@ -35,7 +35,7 @@ Example bind shown below;
     inputSystem.registerAction("LT+X+Y", {name="InputDisplay", method=inputSystem.inputViewer, type="Toggle"})
 
 ## Unmasked Windowed Tool
-If your interested I've made a similar tool that works separately with Dolphin, check it out [here](https://github.com/DeathMaster001/Scooby-Doo-Unmasked-Windowed-Tool).
+If your interested I've made a similar tool that works separately with Dolphin, check it out [here](https://github.com/DeathMaster001/Scooby-Doo-Unmasker).
 
 ## Credits
 - DeathMaster001 for coding.
